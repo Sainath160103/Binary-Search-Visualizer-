@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Search Theory</title>
+    <link rel="stylesheet" href="theory.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h1>📘 Binary Search Visualizer</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="theory.html">Theory</a></li>
+            <li><a href="algorithm.html">Algorithm</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="theory-container">
+
+        <section class="theory-section">
+            <h2>🔍 What is Binary Search?</h2>
+            <p>
+                Binary Search is an efficient searching algorithm that works on <b>sorted arrays</b>.
+                Instead of checking each element sequentially, it divides the search interval in half
+                repeatedly, reducing the number of comparisons significantly.
+            </p>
+        </section>
+
+        <section class="theory-section">
+            <h2>⚙ How Binary Search Works?</h2>
+            <ol>
+                <li>Start with <b>low</b> at the start and <b>high</b> at the end of the array.</li>
+                <li>Calculate <b>mid = (low + high) / 2</b>.</li>
+                <li>If <b>arr[mid] == target</b> → element found.</li>
+                <li>If <b>arr[mid] &lt; target</b> → search the right half.</li>
+                <li>If <b>arr[mid] &gt; target</b> → search the left half.</li>
+                <li>Repeat until <b>low > high</b>.</li>
+            </ol>
+        </section>
+
+        <section class="theory-section">
+            <h2>📈 Time Complexity</h2>
+            <ul>
+                <li><b>Best Case:</b> O(1)</li>
+                <li><b>Worst Case:</b> O(log n)</li>
+                <li><b>Average Case:</b> O(log n)</li>
+            </ul>
+        </section>
+
+        <section class="theory-section">
+            <h2>📝 Pseudocode</h2>
+            <pre class="code-box">
+function binarySearch(arr, target):
+    low = 0
+    high = length(arr) - 1
+
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            return mid
+        else if arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+
+    return -1
+            </pre>
+        </section>
+
+        <section class="theory-section">
+            <h2>🎯 Applications</h2>
+            <ul>
+                <li>Searching in sorted datasets</li>
+                <li>Database indexing</li>
+                <li>Optimized search in programming languages</li>
+                <li>AI and ML applications</li>
+                <li>Peak finding algorithms</li>
+            </ul>
+        </section>
+
+        <div class="button-center">
+            <a href="index.html" class="btn start">🏠 Back to Visualizer</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

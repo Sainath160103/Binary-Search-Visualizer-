@@ -1,0 +1,162 @@
+/* ---------- General Page Styling (Attractive Background) ---------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top left, #00d4ff, #6a11cb, #f7797d);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    color: #fff;
+}
+
+/* Animated gradient */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #00ffe5;
+    text-shadow: 0 0 10px rgba(0,255,255,0.7);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    background: #1e90ff;
+    box-shadow: 0 0 10px #1e90ffaa;
+}
+
+/* ---------- Algorithm Page Container ---------- */
+.algo-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ---------- Header ---------- */
+.algo-header h2 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+.algo-header p {
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.3);
+}
+
+/* ---------- Glass Card Box ---------- */
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    border-radius: 18px;
+    margin: 30px auto;
+    width: 90%;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    animation: fadeIn 0.8s ease;
+}
+
+/* ---------- Steps List ---------- */
+.step-list {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: left;
+    display: inline-block;
+}
+
+.step-list ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+/* ---------- Pseudocode Box ---------- */
+.code-box {
+    background: #1e1e1e;
+    color: #00ff88;
+    padding: 20px;
+    font-size: 17px;
+    border-radius: 12px;
+    width: 90%;
+    margin: 20px auto;
+    display: inline-block;
+    text-align: left;
+    box-shadow: 0 0 12px rgba(0,255,100,0.3);
+    overflow-x: auto;
+}
+
+/* ---------- Fade Animation ---------- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- Gradient Buttons ---------- */
+.btn.start {
+    background: linear-gradient(45deg, #00ff88, #00d4ff);
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0f0f23;
+    transition: 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn.start:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 12px rgba(0,255,150,0.6);
+}
+
+.btn.reset {
+    background: linear-gradient(45deg,#ff6b6b,#ff9c3f);
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0f0f23;
+    transition: 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn.reset:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 12px rgba(255,150,0,0.6);
+}

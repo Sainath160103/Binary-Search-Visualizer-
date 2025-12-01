@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Search Algorithm</title>
+    <link rel="stylesheet" href="algorithm.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1>🔍 Binary Search Visualizer</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="theory.html">Theory</a></li>
+            <li><a class="active" href="algorithm.html">Algorithm</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="algo-container">
+
+        <header class="algo-header">
+            <h2>🚀 Binary Search – Step-by-Step Algorithm</h2>
+            <p>A clean and visually structured guide to how Binary Search works internally.</p>
+        </header>
+
+        <section class="glass-card">
+            <h3>📘 Algorithm Steps</h3>
+            <ol class="step-list">
+                <li>Start with a sorted array.</li>
+                <li>Initialize <b>low = 0</b> and <b>high = n − 1</b>.</li>
+                <li>Repeat while <b>low ≤ high</b>:
+                    <ul>
+                        <li>Calculate <b>mid = (low + high) / 2</b></li>
+                        <li>If <b>arr[mid] == target</b> → Element found</li>
+                        <li>If <b>arr[mid] &lt; target</b> → Search right half</li>
+                        <li>If <b>arr[mid] &gt; target</b> → Search left half</li>
+                    </ul>
+                </li>
+                <li>If loop ends → <b>Element NOT found</b></li>
+            </ol>
+        </section>
+
+        <section class="glass-card">
+            <h3>💻 Pseudocode</h3>
+
+<pre class="code-box">
+BinarySearch(arr, target):
+    low = 0
+    high = length(arr) - 1
+
+    while low ≤ high:
+        mid = (low + high) // 2
+        
+        if arr[mid] == target:
+            return mid
+        
+        else if arr[mid] < target:
+            low = mid + 1
+        
+        else:
+            high = mid - 1
+
+    return -1
+</pre>
+        </section>
+        <a href="index.html" class="btn start">⬅ Back to Visualizer</a>
+
+
+    </div>
+
+</body>
+</html>

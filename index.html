@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Search Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <nav class="navbar">
+    <h1>🔍 Binary Search Visualizer</h1>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="theory.html">Theory</a></li>
+        <li><a href="algorithm.html">Algorithm</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+
+
+    <div class="container">
+
+        <section class="controls-section">
+            <h2>⚙ Controls</h2>
+
+            <div class="controls">
+                <div class="input-group">
+                    <label>Enter Sorted Array:</label>
+                    <input type="text" id="arrayInput" value="2,4,6,8,10">
+                </div>
+
+                <div class="input-group">
+                    <label>Target Value:</label>
+                    <input type="number" id="targetInput" value="6">
+                </div>
+
+                <div class="buttons">
+                    <button id="startButton" class="btn start">Start</button>
+                    <button id="resetButton" class="btn reset">Reset</button>
+                </div>
+
+                <div class="speed-control">
+                    <label>Speed:</label>
+                    <input type="range" id="speedSlider" min="200" max="2500" value="1000">
+                    <span id="speedValue">1000ms</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>📊 Array Visualization</h2>
+            <div id="arrayContainer" class="array-container"></div>
+        </section>
+
+        <section class="explanation-section">
+            <h2>📖 Explanation</h2>
+            <p id="explanationText">Enter values and start the search.</p>
+        </section>
+
+        <section class="tree-section">
+            <h2>🌳 Binary Search Decision Tree</h2>
+            <div id="treeDisplay"></div>
+        </section>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
